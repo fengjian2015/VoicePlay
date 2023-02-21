@@ -1,0 +1,2 @@
+# VoicePlay
+内部采用soundPool按顺序播放本地mp3资源文件
