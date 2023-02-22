@@ -129,13 +129,16 @@ public class VoiceTextTemplate {
                     checkCharacterList(s.substring(i),voiceList, haveMoney);
                 }
                 return;
-            }else if (voiceCharacterList.containsKey(substring) || voiceCharacterList.containsValue(substring)){
+            }else if (voiceCharacterList.containsKey(substring) ){
                 Log.d("VoiceTextTemplate", "匹配成功："+substring);
-                if (voiceCharacterList.containsKey(substring)) {
-                    voiceList.add(voiceCharacterList.get(substring));
-                }else if (voiceCharacterList.containsValue(substring)) {
-                    voiceList.add(substring);
+                voiceList.add(voiceCharacterList.get(substring));
+                if (!substring.equals(s)){
+                    checkCharacterList(s.substring(i),voiceList, haveMoney);
                 }
+                return;
+            } else if (voiceCharacterList.containsValue(substring)){
+                Log.d("VoiceTextTemplate", "匹配成功："+substring);
+                voiceList.add(substring);
                 if (!substring.equals(s)){
                     checkCharacterList(s.substring(i),voiceList, haveMoney);
                 }
@@ -364,7 +367,7 @@ public class VoiceTextTemplate {
             voiceCharacterList.put("B",B);
             delayTimeList.put(C, 260L);
             voiceCharacterList.put("c",C);
-            voiceCharacterList.put("c",C);
+            voiceCharacterList.put("C",C);
             delayTimeList.put(D, 260L);
             voiceCharacterList.put("d",D);
             voiceCharacterList.put("D",D);
