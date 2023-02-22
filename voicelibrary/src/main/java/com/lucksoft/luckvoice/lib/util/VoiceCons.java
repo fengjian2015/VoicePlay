@@ -1,10 +1,13 @@
 package com.lucksoft.luckvoice.lib.util;
 
+import androidx.annotation.Keep;
+
 /**
  * Time：2023/2/17
  * Author：feng
  * Description：
  */
+@Keep
 public class VoiceCons {
 
     public static final String CNG= "cng_";

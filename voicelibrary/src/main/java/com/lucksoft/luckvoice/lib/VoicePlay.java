@@ -8,6 +8,8 @@ import android.media.SoundPool;
 import android.os.Build;
 import android.util.Log;
 
+import androidx.annotation.Keep;
+
 import com.lucksoft.luckvoice.lib.util.FileUtils;
 import com.lucksoft.luckvoice.lib.util.VoiceCons;
 import com.lucksoft.luckvoice.lib.util.VoiceTextTemplate;
@@ -26,6 +28,7 @@ import kotlin.jvm.functions.Function2;
  * Author：feng
  * Description：
  */
+@Keep
 public class VoicePlay {
     public static final String FILE_PATH = "sound/%s.mp3";
 
@@ -163,6 +166,8 @@ public class VoicePlay {
                                         mCountDownLatch.countDown();
                                     });
                                 }
+                            }else{
+                                mCountDownLatch.countDown();
                             }
                         });
                         return true;
