@@ -37,7 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
-    api files('libs/voicelibrary-release.aar')
-//    implementation project(path: ':voicelibrary')
+//    api files('libs/voicelibrary-release.aar')
+    implementation project(path: ':voicelibrary')
 
 }

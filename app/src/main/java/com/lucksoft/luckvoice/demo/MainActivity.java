@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void add(View view){
         String s = et.getText().toString();
+        if(TextUtils.isEmpty(s)){
+            s= et.getHint().toString();
+        }
         arrayList.add(s);
         tvContent.append(s);
         et.setText("");
@@ -49,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         arrayList.clear();
         et.setText("");
         tvContent.append("\n");
+    }
+
+    public void clear(View view){
+        tvContent.setText("");
     }
 
 

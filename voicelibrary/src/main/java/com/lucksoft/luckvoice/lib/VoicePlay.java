@@ -152,7 +152,8 @@ public class VoicePlay {
                                     mExecutorService.execute(() -> {
                                         for (int i=0 ;i<soundIdSet.size();i++){
                                             int soundId = soundIdSet.get(i);
-                                            long delaytime = delayTimeList.get(i);
+                                            long delaytime = delayTimeList.get(i) ;
+
                                             soundPool1.play(soundId, 1, 1, 0, 0, 1);
                                             try {
                                                 Log.d("VoicePlay", "开始播放--- 休眠时长" + delaytime + "  "+Thread.currentThread());
