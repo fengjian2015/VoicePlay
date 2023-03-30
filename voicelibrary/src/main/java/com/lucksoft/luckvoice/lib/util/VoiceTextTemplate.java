@@ -4,6 +4,7 @@ import static com.lucksoft.luckvoice.lib.util.VoiceCons.A;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.B;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.C;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.CHAIYOU;
+import static com.lucksoft.luckvoice.lib.util.VoiceCons.CHONGZHI;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.CNG;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.D;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.DIAN;
@@ -147,7 +148,7 @@ public class VoiceTextTemplate {
                 return;
             }
         }
-        //一次都没匹配到，则移除第一个字符，继续匹配剩下的
+        //一个都没匹配到，则移除第一个字符，继续匹配剩下的
         if (!TextUtils.isEmpty(s) && s.length()>1){
             String substring = s.substring(1);
             Log.d("VoiceTextTemplate", "未匹配成功继续匹配："+substring);
@@ -302,7 +303,7 @@ public class VoiceTextTemplate {
             voiceCharacterList.put("请准备就餐",QINGZHUNBEIJIUCAN);
             delayTimeList.put(SHENG, 260L);
             voiceCharacterList.put("升",SHENG);
-            delayTimeList.put(SHOUKUAN, 400L);
+            delayTimeList.put(SHOUKUAN, 470L);
             voiceCharacterList.put("收款",SHOUKUAN);
             delayTimeList.put(SHOUYIN, 460L);
             voiceCharacterList.put("收银",SHOUYIN);
@@ -326,6 +327,8 @@ public class VoiceTextTemplate {
             voiceCharacterList.put("应收",YINGSHOU);
             delayTimeList.put(SHISHOU, 450L);
             voiceCharacterList.put("实收",SHISHOU);
+            delayTimeList.put(CHONGZHI, 450L);
+            voiceCharacterList.put("充值",CHONGZHI);
             delayTimeList.put(NUMBER_ZERO, 450L);
             voiceCharacterList.put("0",NUMBER_ZERO);
             voiceCharacterList.put("零",NUMBER_ZERO);

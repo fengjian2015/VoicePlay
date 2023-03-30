@@ -37,6 +37,7 @@ public class VoiceCons {
     public static final String ZHIFUBAO= "zhifubao_";//支付宝
     public static final String YINGSHOU= "yingshou_";//应收
     public static final String SHISHOU= "shishou_";//实收
+    public static final String CHONGZHI= "chongzhi_";//充值
 
     public static final String UNIT_TEN= "unitten_";//十
     public static final String UNIT_HUNDRED= "unithundred_";//百
