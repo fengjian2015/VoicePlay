@@ -314,7 +314,7 @@ public class VoiceTextTemplate {
             voiceCharacterList.put("银行卡",YINHANGKA);
             delayTimeList.put(YOUHUI, 400L);
             voiceCharacterList.put("优惠",YOUHUI);
-            delayTimeList.put(YUE, 460L);
+            delayTimeList.put(YUE, 500L);
             voiceCharacterList.put("余额",YUE);
             delayTimeList.put(YUAN, 400L);
             voiceCharacterList.put("元",YUAN);
