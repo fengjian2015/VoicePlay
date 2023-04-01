@@ -231,6 +231,9 @@ public class VoiceTextTemplate {
      */
     private static List<String> readIntPart(String integerPart) {
         List<String> result = new ArrayList<>();
+        if (TextUtils.isEmpty(integerPart)){
+            return result;
+        }
         String intString = MoneyUtils.readInt(Integer.parseInt(integerPart));
         int len = intString.length();
         for (int i = 0; i < len; i++) {
