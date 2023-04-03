@@ -50,6 +50,7 @@ import static com.lucksoft.luckvoice.lib.util.VoiceCons.SHISHOU;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.SHOUKUAN;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.SHOUYIN;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.T;
+import static com.lucksoft.luckvoice.lib.util.VoiceCons.TIANRANQI;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.U;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.UNIT_HUNDRED;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.UNIT_HUNDREDMILLION;
@@ -68,6 +69,7 @@ import static com.lucksoft.luckvoice.lib.util.VoiceCons.YOUHUI;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.YUAN;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.YUE;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.Z;
+import static com.lucksoft.luckvoice.lib.util.VoiceCons.ZHANGHU;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.ZHIFU;
 import static com.lucksoft.luckvoice.lib.util.VoiceCons.ZHIFUBAO;
 
@@ -332,6 +334,10 @@ public class VoiceTextTemplate {
             voiceCharacterList.put("实收",SHISHOU);
             delayTimeList.put(CHONGZHI, 450L);
             voiceCharacterList.put("充值",CHONGZHI);
+            delayTimeList.put(TIANRANQI, 550L);
+            voiceCharacterList.put("天然气",TIANRANQI);
+            delayTimeList.put(ZHANGHU, 450L);
+            voiceCharacterList.put("账户",ZHANGHU);
             delayTimeList.put(NUMBER_ZERO, 450L);
             voiceCharacterList.put("0",NUMBER_ZERO);
             voiceCharacterList.put("零",NUMBER_ZERO);
